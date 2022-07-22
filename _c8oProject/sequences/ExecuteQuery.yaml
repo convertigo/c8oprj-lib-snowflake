@@ -1,0 +1,44 @@
+comment: |
+  Executes a Query on SnowFlake. The query must be in SQL format and you must provide the schema and the query itself
+  
+↓Input_variables [steps.InputVariablesStep-1658422425069]: 
+↓Call_Transaction1 [steps.TransactionStep-1658422394689]: 
+  sourceTransaction: lib_Snowflake.SnowFlakeConnector.ExecuteQuery
+  ↓query [variables.StepVariable-1658422394691]: 
+    description: query
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1658422425069
+          - java.lang.String: 
+            - ↑value: ./Query/text()
+  ↓schema [variables.StepVariable-1658509025410]: 
+    description: schema
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1658422425069
+          - java.lang.String: 
+            - ↑value: ./Schema/text()
+↓Copy [steps.XMLCopyStep-1658422499028]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1658422394689
+        - java.lang.String: 
+          - ↑value: ./document/sql_output
+↓Query [variables.RequestableVariable-1658422443644]: 
+  value: The Query in SQL format. Do not end the query with a ';' sign.
+↓Schema [variables.RequestableVariable-1658508789549]: 
+  value: The SnowFlake Schema you want to execute the query on
+↓TestOK [core.TestCase]: 
+  ↓Query [variables.TestCaseVariable-1658422474866]: 
+    value: SELECT l_returnflag, l_linestatus, sum(l_quantity) as sum_qty, sum(l_extendedprice) as sum_base_price,	sum(l_extendedprice * (1-l_discount)) 	as sum_disc_price,	sum(l_extendedprice * (1-l_discount) * (1+l_tax)) as sum_charge,	avg(l_quantity) as avg_qty,	avg(l_extendedprice) as avg_price,	avg(l_discount) as avg_disc,	count(*) as count_order FROM lineitem WHERE	l_shipdate <= dateadd(day, -90, to_date('1998-12-01')) GROUP BY 	l_returnflag, 	l_linestatus ORDER BY 	l_returnflag, 	l_linestatus
+  ↓Schema [variables.TestCaseVariable-1658508817738]: 
+    value: snowflake_sample_data.tpch_sf1

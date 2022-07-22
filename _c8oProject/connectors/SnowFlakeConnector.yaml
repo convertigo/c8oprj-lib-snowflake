@@ -4,6 +4,15 @@ jdbcDriverClassName: ${lib_snowflake.jdbc.class=net.snowflake.client.jdbc.Snowfl
 jdbcURL: jdbc:snowflake://${lib_snowflake.endpoint}
 jdbcUserName: ${lib_snowflake.user}
 jdbcUserPassword: x383c98e3cb5d0d53bcf48e38c32b38d12fe4462a69206f0dd4a62c39f03015f4b3e37d31c7055718dbb6f5adb351aff1
+↓ExecuteQuery [transactions.SqlTransaction]: 
+  sqlQuery: |
+    'USE schema {{schema}}; 
+    {{query}};
+    '
+  ↓schema [variables.RequestableVariable-1658508776526]: 
+    description: schema
+  ↓query [variables.RequestableVariable-1658508776528]: 
+    description: query
 ↓TestDatabase [transactions.SqlTransaction]: 
   ↑default: true
   comment: A test Transaction to return data from the SnowFlake Sample database

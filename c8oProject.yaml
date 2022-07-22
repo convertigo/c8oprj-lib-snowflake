@@ -1,8 +1,22 @@
 ↑convertigo: 8.0.0.m006
 ↓lib_Snowflake [core.Project]: 
-  comment: This is the SnowFlake connector for Convertigo low Code platform
+  comment: |
+    'This is the SnowFlake connector for Convertigo low Code platform. The connector uses the SnowFlake JDBC driver  to execute SQl queries on the claoud databases.
+    
+    ## Symbols
+    
+    Some symbols must be defined to use this connector
+    
+    |Symbol     | Usage                 |
+    |------------|----------------------|
+    | lib_snowflake.endpoint | The Snowflake end point. This is found in the URL to access you account after the ''https://'' |
+    | lib_snowflake.user | Your SnowFlake user name when you created your snowflake account |
+    | lib_snowflake.password.secret | Your SnowFlake password when you created the SnowFlake account |
+    
+    '
   corsOrigin: =Origin
   ↓SnowFlakeConnector [connectors.SqlConnector]: 🗏 connectors/SnowFlakeConnector.yaml
+  ↓ExecuteQuery [sequences.GenericSequence]: 🗏 sequences/ExecuteQuery.yaml
   ↓NgxBuilderTemplate [references.ProjectSchemaReference]: 
     comment: ngx builder template
     projectName: mobilebuilder_tpl_8_0_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_8_0_0_ngx.zip
