@@ -1,7 +1,7 @@
 
 # ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/core/images/project_color_16x16.png?raw=true "Project") lib_Snowflake
 
-This is the SnowFlake connector for Convertigo low Code platform. The connector uses the SnowFlake JDBC driver  to execute SQl queries on the claoud databases.
+This is the SnowFlake connector for Convertigo low Code platform. The connector uses the SnowFlake JDBC driver to execute SQl queries on the cloud databases.
 
 ## Symbols
 
