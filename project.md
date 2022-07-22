@@ -9,7 +9,7 @@ Some symbols must be defined to use this connector
 
 |Symbol     | Usage                 |
 |------------|----------------------|
-| lib_snowflake.endpoint | The Snowflake end point. This is found in the URL to access you account after the 'https://' |
+| lib_snowflake.endpoint | The Snowflake end point. This is found in the URL to access your account after the 'https://' |
 | lib_snowflake.user | Your SnowFlake user name when you created your snowflake account |
 | lib_snowflake.password.secret | Your SnowFlake password when you created the SnowFlake account |
 

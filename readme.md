@@ -3,7 +3,7 @@
 
 # lib_Snowflake
 
-This is the SnowFlake connector for Convertigo low Code platform. The connector uses the SnowFlake JDBC driver  to execute SQl queries on the claoud databases.
+This is the SnowFlake connector for Convertigo low Code platform. The connector uses the SnowFlake JDBC driver to execute SQl queries on the cloud databases.
 
 ## Symbols
 
@@ -11,7 +11,7 @@ Some symbols must be defined to use this connector
 
 |Symbol     | Usage                 |
 |------------|----------------------|
-| lib_snowflake.endpoint | The Snowflake end point. This is found in the URL to access you account after the 'https://' |
+| lib_snowflake.endpoint | The Snowflake end point. This is found in the URL to access your account after the 'https://' |
 | lib_snowflake.user | Your SnowFlake user name when you created your snowflake account |
 | lib_snowflake.password.secret | Your SnowFlake password when you created the SnowFlake account |
 
