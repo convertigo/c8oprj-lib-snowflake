@@ -97,7 +97,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;Query
 </td>
 <td>
-
+The Query in SQL format. Do not end the query with a ';' sign.
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/variables/images/variable_color_16x16.png?raw=true "  alt="RequestableVariable" >&nbsp;Schema
 </td>
 <td>
-
+The SnowFlake Schema you want to execute the query on
 </td>
 </tr>
 </table>

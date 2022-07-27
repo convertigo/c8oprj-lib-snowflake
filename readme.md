@@ -61,10 +61,10 @@ Executes a Query on SnowFlake. The query must be in SQL format and you must prov
 <th>name</th><th>comment</th>
 </tr>
 <tr>
-<td>Query</td><td></td>
+<td>Query</td><td>The Query in SQL format. Do not end the query with a ';' sign.</td>
 </tr>
 <tr>
-<td>Schema</td><td></td>
+<td>Schema</td><td>The SnowFlake Schema you want to execute the query on</td>
 </tr>
 </table>
 
